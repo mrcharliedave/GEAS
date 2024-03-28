@@ -12,11 +12,11 @@ class GEAS_API AG2DCharacter : public APaperCharacter
 {
 	GENERATED_UCLASS_BODY()
 public:
-	//UFUNCTION()
-	//void CreateCharacter(FGameplayTag characterToCreate);
+	UFUNCTION()
+	void CreateCharacter(FGameplayTag characterToCreate);
 	
 private:
-	//FGameplayTag mCharacterBaseType;
+	FGameplayTag mCharacterBaseType;
 
 	UAbilitySystemComponent* mAbilitySystemComponent;
 	UHealthComponent* mHealthComponent;

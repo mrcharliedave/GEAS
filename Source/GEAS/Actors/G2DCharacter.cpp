@@ -11,9 +11,7 @@ AG2DCharacter::AG2DCharacter(const FObjectInitializer& ObjectInitializer)
 	mInventoryComponent = CreateDefaultSubobject<UInventoryComponent>("Inventory Component");
 }
 
-// void AG2DCharacter::CreateCharacter(FGameplayTag characterToCreate)
-// {
-// 	// Search DB for character
-// 	
-// 	
-// }
+void AG2DCharacter::CreateCharacter(FGameplayTag characterToCreate)
+{
+	// Search DB for character
+}
