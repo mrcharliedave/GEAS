@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameplayTagContainer.h"
 #include "Components/ActorComponent.h"
 #include "AttackComponent.generated.h"
 
@@ -20,8 +21,13 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
+	float mAttackStrength;
+	float mAttackSpeed;
+	FGameplayTagContainer mEffectsToApplyOnHit;
+
 public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
+	
 };
