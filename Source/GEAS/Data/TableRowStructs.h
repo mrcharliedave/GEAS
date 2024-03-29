@@ -12,7 +12,7 @@ struct FGeasRowBase : public FTableRowBase
 {
 	GENERATED_USTRUCT_BODY()
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS", meta=(Categories="GEAS.Character.Type"))
 	FGameplayTag mTypeTag;
 };
 
@@ -21,18 +21,39 @@ struct FGeasCharacterRow : public FGeasRowBase
 {
 	GENERATED_USTRUCT_BODY()
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character", meta=(Categories="GEAS.Character.Type.Creature"))
 	FGameplayTag mBaseCreatureType;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character", meta=(Categories="GEAS.Character.Type.Class"))
 	FGameplayTag mBaseClassType;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character")
 	FGameplayTagContainer mBaseEnchantments;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character")
 	float mMaxHealth;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character")
 	float mBaseDamage;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character")
 	float mBaseAttackRate;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS")
+};
+
+USTRUCT(BlueprintType)
+struct FGeasPartyMemberRow : public FGeasCharacterRow
+{
+	GENERATED_USTRUCT_BODY()
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character|Party", meta=(Categories="GEAS.Rarity"))
+	FGameplayTag mCharacterRarity;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character|Party")
 	float mBaseInventorySize;
+};
+
+USTRUCT(BlueprintType)
+struct FGeasEnemyRow : public FGeasCharacterRow
+{
+	GENERATED_USTRUCT_BODY()
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "GEAS|Character|Enemy", meta=(Categories="GEAS.Character.Type.Enemy.Rank"))
+	FGameplayTag mEnemyRank;
 };
