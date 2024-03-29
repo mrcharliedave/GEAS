@@ -4,11 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "Screen.h"
-#include "UObject/Object.h"
-#include "BattleScreen.generated.h"
+#include "EventScreen.generated.h"
 
 UCLASS()
-class GEAS_API UBattleScreen : public UScreen
+class GEAS_API UEventScreen : public UScreen
 {
 	GENERATED_BODY()
 };

@@ -3,12 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Screen.h"
 #include "UObject/Object.h"
-#include "BattleScreen.generated.h"
+#include "Screen.generated.h"
 
 UCLASS()
-class GEAS_API UBattleScreen : public UScreen
+class GEAS_API UScreen : public UObject
 {
 	GENERATED_BODY()
 };
