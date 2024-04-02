@@ -10,7 +10,7 @@ public class GEAS : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "Paper2D", "GameplayAbilities", "GameplayTags" });
+		PrivateDependencyModuleNames.AddRange(new string[] { "Paper2D", "GameplayAbilities", "AbilitySystemGameFeatureActions", "GameplayTasks", "GameplayTags" });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

@@ -16,6 +16,10 @@ class GEAS_API UAttackComponent : public UActorComponent
 public:
 	// Sets default values for this component's properties
 	UAttackComponent();
+	
+	// Called every frame
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
+							   FActorComponentTickFunction* ThisTickFunction) override;
 
 protected:
 	// Called when the game starts
@@ -24,10 +28,5 @@ protected:
 	float mAttackStrength;
 	float mAttackSpeed;
 	FGameplayTagContainer mEffectsToApplyOnHit;
-
-public:
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
-	                           FActorComponentTickFunction* ThisTickFunction) override;
 	
 };
