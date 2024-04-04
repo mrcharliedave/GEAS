@@ -1,0 +1,85 @@
+GEAS
+Game like Balatro but with party members in randomly (or customly) named party
+4 Base slots for characters
+10 "Game Masters" to choose from with different modifires
+10 NG+ levels with aditional modifiers
+Each character gets an Armour, Weapon, and Item slot. (Or Prefix, Suffix?)
+Each party goes into 1 of 3 dungeons to fight specific enemies and then a boss
+	Swamp
+		Great Toad
+		Bad Witch
+		Bog Monster
+	Cave
+		Mega Bear
+		Huge Bat
+		Stalactite
+	Mountain
+		Goblin King
+		Owlbear
+		King Kong
+	Space
+		Giant bug alien (B.U.G)
+		Gundam (R.O.B)
+		Rocket
+	Planes
+		Combine Harvester
+		Scarecrow
+		Goblin Wanderer (Chill samurai)
+	Forest
+		Bandit King
+		Mega Wasp
+		Catkin Cutthroat
+	Island
+		Cultist Queen
+		Sea Elf Warrior
+		Salt Goop
+	Sea
+		Ocean Goop
+		Pirate Queen
+		Big Shark
+	Sub-Terrainian
+		Goblin Excavator
+		Dirt Wizard
+		Undead Archeologist
+Beat 2 Dungeons get access to a final "Boss Run" last stage
+You can choose to "Side Quest" to get more stuff, but boss dungeon gets a difficulty modifier
+	Fortress
+		Ancient Dragon
+		Pikuhl the Forgotten Warden
+	Underwater
+		Kracken
+		Submarine
+	Volcano
+		Goblin God
+		Lord of Lava
+	Black Hole
+		Human - Robot space king
+		Primordial Goop
+Each run has enemy types depending on dungeons
+	Undead
+	Cultist
+	Bandit
+	Wildlife
+	Water Creatures
+	Birds
+	Dragons
+	Abominations
+	Demons
+	Goblins
+Effects
+	Burning
+	Freezing
+	Poison
+	Shock
+	Stun
+	Weak
+	Fragile
+	Strong
+	Tough
+	Fast
+And environmental modifiers
+Weapon Items can have modifiers
+	Weapon
+	+ Element (suffix)
+	+ Prefix
+Item storage, store 16 items in a crate to swap between fights
